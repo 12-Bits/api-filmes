@@ -12,14 +12,14 @@ useEffect(() => {
         fetch(`https://api.themoviedb.org/3/movie/${id.id}?api_key=${APIKey}&language-en-US&page=1`)
         .then(response => response.json())
         .then(data => {
-const {title, overview, poster_path, release_date} = data
+          const {title, overview, poster_path, release_date} = data
 
           const movie = {
             id,
             title,
             sinopse:overview,
             image: `${image_path}${poster_path}`,
-            ReleaseDate: release_date
+            ReleaseDate: release_date,
           }
           setMovie(movie)
 
@@ -30,17 +30,18 @@ const {title, overview, poster_path, release_date} = data
       <Container>
       <div className="movie">
         <img src={movie.image} alt={movie.title} />
-        <div className="details">
-          <h1>{movie.title}</h1>
-          <span>{movie.sinopse}</span>
-</div>
-        <div className="RelaseDate">
-        <span>Data de Lançamento: {movie.ReleaseDate}</span>
-        </div>
       </div>
-
+      <div className="details">
+        <h1>{movie.title}</h1>
+        <span>{movie.sinopse}</span>
+      </div>
+      <div className="RelaseDate">
+        <span>Data de Lançamento: {movie.ReleaseDate}</span>
+      </div>
+      <div className="button">
+        <button><a href="/">Voltar</a></button>
+      </div>
       </Container>
-
   );
 }
 export default Details;
