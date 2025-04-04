@@ -1,7 +1,10 @@
-function home(){
+function Home(){
     return(
-        <h1>Hello World</h1>
+        <div>
+        <h1>Movies</h1>
+        
+        </div>
     )
-
 }
-export default home;
+
+export default Home;
