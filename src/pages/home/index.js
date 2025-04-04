@@ -1,42 +1,12 @@
 import { Container, MovieList, Movie } from "./styles";
+import {APIKey} from "../../config/key";
+import {useState} from "react";
 
 
 function Home(){
 
-    const movies =[
-        {
-            title: 'Spider-Man',
-            image_url:"https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
-        },
-        {
-            title: 'Spider-Man',
-            image_url:"https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
-        },
-        {
-            title: 'Spider-Man',
-            image_url:"https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
-        },
-        {
-            title: 'Spider-Man',
-            image_url:"https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
-        },
-        {
-            title: 'Spider-Man',
-            image_url:"https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
-        },
-        {
-            title: 'Spider-Man',
-            image_url:"https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
-        },
-        {
-            title: 'Spider-Man',
-            image_url:"https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
-        },
-        {
-            title: 'Spider-Man',
-            image_url:"https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
-        }
-    ]
+    const [movies, setMovies] = useState([])
+
     return(
         <Container>
         <h1>Movies</h1>
