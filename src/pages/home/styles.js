@@ -17,7 +17,7 @@ export const MovieList = styled.ul`
 export const Movie = styled.li`
         display: flex;
         flex-direction: column;
-        aling-items: center;
+        align-items: center;
 
             img{
         width: 180px;
@@ -28,6 +28,7 @@ export const Movie = styled.li`
     span{
         font-weight: bold;
         font-size: 120%;
+        text-align: center;
         }
     a{
         transition: all 0.3s;
