@@ -12,6 +12,7 @@ export const MovieList = styled.ul`
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
     column-gap: 2rem;
     row-gap: 4rem;
+    
 }
 `
 export const Movie = styled.li`
